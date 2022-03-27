@@ -33,6 +33,7 @@ body {
   line-height: 1.5;
   font-weight: 300;
   color: #fe5f00;
+  background-color: #ffe156;
 }
 img {
   vertical-align: middle;
@@ -73,6 +74,8 @@ p {
 .row {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .justify-content-between {
   justify-content: space-between;
@@ -397,18 +400,52 @@ Our menu section starts here
   font-size: 18px;
 }
 .desc p {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   font-family: "Poppins", sans-serifs;
   color: var(--contrast-color);
+  text-align: center;
 }
 .product-price {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
 }
 /*---------------
 Our menu section ends here
 -----------------*/
+/*---------------
+Contact us starts here
+-----------------*/
+.ah-img img {
+  width: 100%;
+  border-radius: 10px;
+  height: 400px;
+}
+
+/*---------------
+Contact us ends here
+-----------------*/
+/*---------------
+footer styles starts here
+-----------------*/
+.footer {
+  padding: 50px 0 0;
+  background-color: var(--contrast-color);
+}
+.footer-item {
+  text-align: center;
+}
+.footer-item p {
+  color: #ffe156;
+  line-height: 30px;
+}
+.footer-item h3 {
+  color: #ffe156;
+}
+/*---------------
+footer styles ends here
+-----------------*/
+
 /*---------------
 Resposive section
 -----------------*/
