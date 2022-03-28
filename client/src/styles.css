@@ -182,15 +182,7 @@ Navigation starts here
   z-index: 99;
   width: 100%;
 }
-.header::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
+
 .header .nav {
   position: fixed;
   right: 0;
@@ -375,7 +367,7 @@ Our menu section starts here
   flex-direction: column;
   border-top: 0.2rem var(--contrast-color);
 }
-.desc p:hover {
+.desc :hover {
   color: var(--netural-color);
 }
 .product {

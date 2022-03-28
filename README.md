@@ -23,3 +23,17 @@ AtHome Resturant
    4. add .prodocut-image, .product-name .product-price
    5. style ul.product and internal divs
    6. duplicate to show more products.
+4. Render Dynamic Home Screen
+   1. create data.js
+   2. export an array of 6 products
+   3. create screen/HomScreen.js
+   4. export HomeScreen as an object with render() method
+   5. Implement render()
+   6. import data.js
+   7. return products mapped to list inside an ul
+   8. create app.js
+   9. link it to index.html as module
+   10. set main id to main_container
+   11. create router() function
+   12. set main_container innerHTML to homeScreen.render()
+   13. set load evnent of window to router() function
