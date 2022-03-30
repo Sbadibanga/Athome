@@ -37,3 +37,55 @@ AtHome Resturant
    11. create router() function
    12. set main_container innerHTML to homeScreen.render()
    13. set load evnent of window to router() function
+5. Build Url Router
+   1. create routes as route:screen object for home screen.
+   2. create utils.js
+   3. export parseRequestURL()
+   4. set url as hash address split by slash.
+   5. return resource, id and verb of url.
+   6. update router()
+   7. set request as parseRequestURL()
+   8. build parsedUrl and compare with routes.
+   9. if route exists render it, else render Error404
+   10. create screens/Error404.js and render error message.
+6. Create Node.JS server
+   1. run npm init in root athome folder.
+   2. npm install express
+   3. create server.js
+   4. add start command as node backend/server.js
+   5. require express
+   6. move data.js from frontend to backend
+   7. create route for /api/products
+   8. return products in data.js
+   9. run npm start
+7. Load Products Fron Backend
+   1. edit menuScreen.js
+   2. make render async
+   3. fetch products from '/api/products' in render()
+   4. make router() async and call await menuScreen.render()
+   5. user cors on backend
+8. Add Webpack
+   1. cd frontend
+   2. npm install -D webpack webpack-cli webpack-dev-server
+   3. npm uninstall live-server
+   4. "start": "webpack-dev-server --mode development --watch-content-base --open"
+   5. move index.html, style.css and images to frontend folder
+   6. rename app.js to index.js
+   7. updaye index.html
+   8. add <script src="main.js></script> before </body>
+   9. npm start
+   10. npm install axios
+   11. change fetch to axios in menuScreen
+9. Install Bavel for ES6 Syntax
+   1. npm install -D babel core, clie, node, preset-env
+   2. create .babelrc and set presets to @babel/preset-env
+   3. npm install -D nodemon
+   4. set start: nodemon --watch backend --exes babel-node backend/server.js
+   5. convert require to import in server.js
+   6. npm start
+10. Install VSCode Extension
+    1. JavaScript (ES6) code snippets
+    2. ES7 React/Redux/graphQL/React-Native snippets
+    3. Prettier - Code formatter
+    4. HTMl&less grammar injections
+    5. CSS Peek
