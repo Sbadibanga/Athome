@@ -89,3 +89,5 @@ AtHome Resturant
     3. Prettier - Code formatter
     4. HTMl&less grammar injections
     5. CSS Peek
+
+npm audit fix --force

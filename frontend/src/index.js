@@ -5,7 +5,7 @@ import { parseRequestURL } from './utils';
 
 const routes = {
   '/': menuScreen,
-  '/meal/:id': mealScreen,
+  '/product/:id': mealScreen,
 };
 const router = async () => {
   const request = parseRequestURL();
