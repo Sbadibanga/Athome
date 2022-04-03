@@ -1,8 +1,26 @@
 import express from 'express';
 import cors from 'cors';
+import mysql from 'mysql';
 import data from './data';
 
+
 const app = express();
+const mySql = mysql;
+
+const connection = mySql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: 'password',
+    database: 'AtHomeDatabase',
+    port: '3306'
+});
+connection.connect((err) => {
+  if(err){
+    throw err
+  }else{
+    console.log('connected')
+  }
+});
 
 app.use(cors());
 app.get('/api/products', (req, res) => {

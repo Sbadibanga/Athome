@@ -6,7 +6,7 @@ export default {
       image: '/images/dinners/product-1.jpg',
       price: 12.99,
       descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      countInStcok: 8,
+      countInStock: 8,
 
     },
     {
@@ -15,7 +15,7 @@ export default {
       image: '/images/dinners/product-2.jpg',
       price: 12.99,
       descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      countInStcok: 8,
+      countInStock: 8,
     },
     {
       id: '3',
@@ -23,7 +23,7 @@ export default {
       image: '/images/dinners/product-3.jpg',
       price: 12.99,
       descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      countInStcok: 8,
+      countInStock: 8,
     },
     {
       id: '4',
@@ -31,7 +31,7 @@ export default {
       image: '/images/dinners/product-4.jpg',
       price: 12.99,
       descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      countInStcok: 8,
+      countInStock: 8,
     },
     {
       id: '5',
@@ -39,7 +39,7 @@ export default {
       image: '/images/dinners/product-5.jpg',
       price: 12.99,
       descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      countInStcok: 8,
+      countInStock: 8,
     },
     {
       id: '6',
@@ -47,7 +47,7 @@ export default {
       image: '/images/dinners/product-6.jpg',
       price: 12.99,
       descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      countInStcok: 8,
+      countInStock: 8,
     },
     {
       id: '7',
@@ -55,7 +55,7 @@ export default {
       image: '/images/dinners/product-7.jpg',
       price: 12.99,
       descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      countInStcok: 8,
+      countInStock: 0,
     },
     {
       id: '8',
@@ -63,7 +63,7 @@ export default {
       image: '/images/dinners/product-7.jpg',
       price: 12.99,
       descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      countInStcok: 8,
+      countInStock: 8,
     },
     {
       id: '9',
@@ -71,7 +71,7 @@ export default {
       image: '/images/dinners/product-2.jpg',
       price: 12.99,
       descrip: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-      countInStcok: 8,
+      countInStock: 8,
     },
   ],
 };

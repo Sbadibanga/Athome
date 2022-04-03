@@ -1,3 +1,4 @@
+import CartScreen from './screens/CartScreen';
 import Error404Screen from './screens/Error404Screen';
 import mealScreen from './screens/mealScreen';
 import menuScreen from './screens/menuScreen';
@@ -6,6 +7,8 @@ import { parseRequestURL } from './utils';
 const routes = {
   '/': menuScreen,
   '/product/:id': mealScreen,
+  '/cart/:id': CartScreen,
+  '/cart': CartScreen,
 };
 const router = async () => {
   const request = parseRequestURL();
@@ -16,6 +19,7 @@ const router = async () => {
 
   const main = document.getElementById('menu-products');
   main.innerHTML = await screen.render();
+  await screen.after_render();
 };
 window.addEventListener('load', router);
 window.addEventListener('hashchange', router);

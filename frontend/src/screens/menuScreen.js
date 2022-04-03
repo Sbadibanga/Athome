@@ -13,6 +13,11 @@ const menuScreen = {
     }
     const products = response.data;
     return `
+      <div class="row">
+      <div class="section-title">
+        <h2>Our Menu</h2>
+      </div>
+      </div>
         <ul class="products">
             ${products.map(
               (product) => `
@@ -22,14 +27,9 @@ const menuScreen = {
                     <img src="${product.image}" alt="${product.name}" />
                   </a>
                   <div class="product-name">
-                    <a href="/#/product/"> ${product.name} </a>
+                    <a href="/#/product/${product.id}"> ${product.name} </a>
                   </div>
                   <div class="product-price">£${product.price}</div>
-                  <div class="desc">
-                    <p>
-                    ${product.descrip}
-                    </p>
-                  </div>
                 </div>
             </li>
             `,
