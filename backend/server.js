@@ -1,28 +1,20 @@
 import express from 'express';
 import cors from 'cors';
-import mysql from 'mysql';
+import dbConnection from './config';
 import data from './data';
+import customerRouter from './Routes/customerRoutes';
 
-
-const app = express();
-const mySql = mysql;
-
-const connection = mySql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
-    database: 'AtHomeDatabase',
-    port: '3306'
-});
-connection.connect((err) => {
+dbConnection.connect((err) => {
   if(err){
     throw err
   }else{
-    console.log('connected')
+    console.log('connected to mySql')
   }
 });
 
+const app = express();
 app.use(cors());
+app.use('/api/customers', customerRouter)
 app.get('/api/products', (req, res) => {
   res.send(data.products);
 });
