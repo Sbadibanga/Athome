@@ -2,19 +2,12 @@ const SigninScreen = {
     after_render: () =>{},
     render: () =>{
         return `
+        <section class="menu-section">
         <div class="form-container">
             <form id="signin-form">
                 <ul class="form-items">
                     <li>
                     <h1>Sign-In</h1>
-                    </li>
-                    <li>
-                        <label for="fname"> First Name : </label>
-                        <input type="name" name="fname" id="fname"/>
-                    </li>
-                    <li>
-                        <label for="lname"> Last Name : </label>
-                        <input type="name" name="lname" id="øname"/>
                     </li>
                     <li>
                         <label for="email"> Email :</label>
@@ -36,6 +29,7 @@ const SigninScreen = {
                 </ul>
             </form>
         </div>
+        </section>
         `;
     },
 };

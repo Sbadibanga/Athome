@@ -16,6 +16,7 @@ const mealScreen = {
       return `<div>${product.error}</div>`;
     }
     return `
+    <section class="menu-section">
     <div class="content">
       <div class="back-to-menu">
       <a herf= "/#/"> Back to Menu </a>
@@ -61,6 +62,7 @@ const mealScreen = {
         </div>
       </div>
     </div>
+    </section>
     `
   },
 

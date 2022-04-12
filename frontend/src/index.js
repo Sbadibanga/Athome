@@ -1,12 +1,12 @@
 import CartScreen from './screens/CartScreen';
 import Error404Screen from './screens/Error404Screen';
 import mealScreen from './screens/mealScreen';
-import menuScreen from './screens/menuScreen';
+import homeScreen from './screens/homeScreen';
 import SigninScreen from './screens/SigninScreen';
 import { parseRequestURL } from './utils';
 
 const routes = {
-  '/': menuScreen,
+  '/': homeScreen,
   '/product/:id': mealScreen,
   '/cart/:id': CartScreen,
   '/cart': CartScreen,
@@ -19,7 +19,7 @@ const router = async () => {
         + (request.verb ? `/${request.verb}` : '');
   const screen = routes[parseUrl] ? routes[parseUrl] : Error404Screen;
 
-  const main = document.getElementById('menu-products');
+  const main = document.getElementById('main-container');
   main.innerHTML = await screen.render();
   await screen.after_render();
 };

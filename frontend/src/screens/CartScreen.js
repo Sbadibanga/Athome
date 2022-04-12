@@ -62,6 +62,7 @@ const CartScreen = {
         }
         const cartItems = getCartItems();
         return `
+        <section class="menu-section">
         <div class="cart">
             <div class="cart-list">
                 <ul class="cart-list-container">
@@ -116,6 +117,7 @@ const CartScreen = {
                     </button>
             </div>
         </div>
+        </section>
         `;
     },
 
